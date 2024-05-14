@@ -1,20 +1,20 @@
-import React from 'react';
+import React from "react"
 
-const SecondsCounter = ({ seconds }) => {
-  const digitArray = Array.from(String(seconds).padStart(6, '0'), Number);
+export function SimpleCounter (props){
+    
+    return (
+    
+        <div className="counter">
+            <div className="clock">
+            <i className="fa fa-clock"></i>
+            </div>
+            <div className="six">{props.numbSix}</div>
+            <div className="five">{props.numbFive}</div>
+            <div className="four">{props.numbFour}</div>
+            <div className="three">{props.numbThree}</div>
+            <div className="two">{props.numbTwo}</div>
+            <div className="one">{props.numbOne}</div>
 
-  return (
-    <div className="container">
-      <div className="counter">
-        <i className="fas fa-clock clock-icon"></i>
-        <div className="digits">
-          {digitArray.map((digit, index) => (
-            <div key={index} className="digit">{digit}</div>
-          ))}
         </div>
-      </div>
-    </div>
-  );
-};
-
-export default SecondsCounter;
+    )
+}

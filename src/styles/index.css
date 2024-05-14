@@ -1,3 +1,14 @@
+.counter {
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+    height: 200px;
+    background: black;
+    color: white;
+    font-size: 8rem;
+    font-family: 'Times New Roman', Times, serif;
+    gap: 5rem;
+}
 
 /* 
 
